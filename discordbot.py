@@ -28,7 +28,7 @@ async def on_message(message):
             embed.add_field(name="담당 관리자", value=f"{message.author} ( {message.author.mention} )", inline=False)
             embed.set_footer(text="PROJECT BY. STUDIO DYT.")
             await message.author.send (embed=embed)
-            role = discord.utils.get(message.guild.roles, name ="MEMBER || 맴버")
+            role = discord.utils.get(message.guild.roles, name = 'MEMBER || 맴버')
             await user.add_roles(role)
 
         else:
