@@ -26,7 +26,7 @@ async def on_message(message):
             embed = discord.Embed(title="STUDIO DYT / VERIFY", description="정상적으로 인증처리 되었습니다.",timestamp=datetime.datetime.now(pytz.timezone('UTC')), color=0xff0000)
             embed.add_field(name="인증 요청자", value=f"{user.name} ( {user.mention} )", inline=False)
             embed.add_field(name="담당 관리자", value=f"{message.author} ( {message.author.mention} )", inline=False)
-            embed.set_footer(text="Bot Made by. 바코드 #1741")
+            embed.set_footer(text="PROJECT BY. STUDIO DYT.")
             await message.author.send (embed=embed)
             role = discord.utils.get(message.guild.roles, name ="MEMBER || 맴버")
             await user.add_roles(role)
