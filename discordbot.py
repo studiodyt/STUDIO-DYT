@@ -17,7 +17,7 @@ async def on_ready():
     print("디스코드봇 ID:" + str(client.user.id))
     print("디스코드봇 버전:" + str(discord.__version__))
     print('------')
-    await client.change_presence(status=discord.Status.online, activity=discord.Game("BREAK THE MOLD / STUDIODYT."))
+    await client.change_presence(activity=discord.Streaming(name="BREAK THE MODL / STUDIODYT.", url='https://discord.gg/MGGPNMNWXs'))
 
 @client.event
 async def on_message(message):
